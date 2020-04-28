@@ -1,23 +1,271 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>It's BEM</title>
     <meta name="description" content="It's BEM Web Design for everybody.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 </head>
 
 <body>
 
+    <div id="contactModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="row form-group">
+                            <label for="fname" class="col-md-12 col-form-label">Full Name</label>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="fname" placeholder="Enter your full name">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <label for="Email" class="col-md-12 col-form-label">Email address</label>
+                            <div class="col-md-12">
+                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row form-group">
+                            <label for="message" class="col-md-12">Tell me a bit about your project</label>
+                            <div class="col-md-12">
+                                <textarea class="form-control col-md-12" name="message" id="message"
+                                    rows="8"></textarea>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-block"><i class="fa fa-paper-plane fa-inverse"></i> <strong>
+                            Send</strong></button>
+                    <button type="button" class="btn btn-outline-dark btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand mr-auto " href="#"><img height="100" src="./img/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Navbar" class="collapse navbar-collapse">
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav-item active"><a class="nav-link pr-2" href="#"><strong>Home</strong></a></li>
+
+                    <li class="nav-item"><a class="nav-link pr-2" href="#">About me</a></li>
+
+                    <li class="nav-item"><a class="nav-link pr-2" href="#">My Portfolio</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pr-4" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown">Services </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-code mr-3"></i>Web Design</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-magic mr-3"></i>Graphic Design</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-shield mr-3"></i>Security and performance</a>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item d-none d-sm-block social-media"><a class="nav-link pr-1"
+                            href="https://www.facebook.com/SutMinXtrace" target="_blank"><img src="./img/icons/fb.png"
+                                height="20px" alt="Facebook logo"></a></li>
+
+                    <li class="nav-item d-none d-sm-block social-media"><a class="nav-link pr-1"
+                            href="https://www.instagram.com/bassem_el_mokhtar/" target="_blank"><img
+                                src="./img/icons/ig.png" height="20px" alt="Instagram logo"></a></li>
+
+                    <li class="nav-item d-none d-sm-block social-media"><a class="nav-link pr-1"
+                            href="https://twitter.com/sut_x" target="_blank"><img src="./img/icons/tw.png" height="20px"
+                                alt="Twitter logo"></a></li>
+
+                    <li class="nav-item d-none d-sm-block social-media"><a class="nav-link pr-1"
+                            href="https://dribbble.com/SutMinXTrace" target="_blank"><img src="./img/icons/dr.png"
+                                height="20px" alt="Dribble logo"></a></li>
+
+                    <li class="nav-item d-none d-sm-block social-media"><a class="nav-link pr-1"
+                            href="https://www.linkedin.com/in/bassem-el-mokhtar/" target="_blank"><img
+                                src="./img/icons/in.png" height="20px" alt="Linkedin logo"></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-6 align-self-center">
+                    <h1 class="title">
+                        Design For Everybody
+                    </h1>
+                    <p class="desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore alias illo at modi minus.
+                        Tempore quasi, voluptatum sed aperiam commodi possimus nihil perferendis expedita velit
+                        molestiae? Doloremque obcaecati aperiam veritatis!
+                    </p>
+                    <button type="button" class="btn btn-outline-primary xs-block" data-toggle="modal"
+                        data-target="#contactModal">
+                        Contact Me
+                    </button>
+                </div>
+                <div class="col col-12 col-md-6">
+                    <img class="d-flex fluid illustration" src="./img/illustration.png" alt="ill">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2 class="title">Services</h2>
+                    <div class="space-50"></div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                      </span>
+                      <div class="space-20"></div>
+                      <h5>Web Design</h5>
+                      <div class="space-20"></div>
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere debitis ipsam, 
+                          ea soluta culpa omnis ipsum deleniti aliquid necessitatibus, dolore voluptatum. Natus error architecto consequuntur possimus provident corporis autem.
+                      </p>
+                      <div class="space-20"></div>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-magic fa-stack-1x fa-inverse"></i>
+                      </span>
+                      <div class="space-20"></div>
+                      <h5>Graphic Design</h5>
+                      <div class="space-20"></div>
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere debitis ipsam, 
+                          ea soluta culpa omnis ipsum deleniti aliquid necessitatibus, dolore voluptatum. Natus error architecto consequuntur possimus provident corporis autem.
+                      </p>
+                      <div class="space-20"></div>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-shield fa-stack-1x fa-inverse"></i>
+                      </span>
+                      <div class="space-20"></div>
+                      <h5>Security and performance</h5>
+                      <div class="space-20"></div>
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere debitis ipsam, 
+                          ea soluta culpa omnis ipsum deleniti aliquid necessitatibus, dolore voluptatum. Natus error architecto consequuntur possimus provident corporis autem.
+                      </p>
+                      <div class="space-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2 class="title">My Technologies</h2>
+                    <div class="space-50"></div>
+                    <p>Our products are built on top of modern frameworks. Having the coded and the designed versions for the same framework, your designers and developers will talk the same language. </p>
+                    <div class="space-50"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-md-3 col-md-1">
+                    <a href="vuejs.com">
+                        <img class="logo" src="./img/logos/vue.jpg" alt="Vue.js">
+                    </a>
+                </div>
+
+                <div class="col-md-1">
+                    <a href="vuejs.com">
+                        <img class="logo" src="./img/logos/angular.jpg" alt="Angular">
+                    </a>
+                </div>
+
+                <div class="col-md-1">
+                    <a href="vuejs.com">
+                        <img class="logo" src="./img/logos/react.jpg" alt="React">
+                    </a>
+                </div>
+
+                <div class="col-md-1">
+                    <a href="vuejs.com">
+                        <img class="logo" src="./img/logos/bootstrap.jpg" alt="Bootstrap 4">
+                    </a>
+                </div>
+
+                <div class="col-md-1">
+                    <a href="vuejs.com">
+                        <img class="logo" src="./img/logos/sass.jpg" alt="Sass">
+                    </a>
+                </div>
+
+                <div class="col-md-1">
+                    <a href="vuejs.com">
+                        <img class="logo" src="./img/logos/ps.jpg" alt="Photoshop">
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="row text-center">
+                
+            </div>
+        </div>
+    </section>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
