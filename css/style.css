@@ -1,64 +1,260 @@
+/*============================ COLORS==================================
+
+    Buttons color : #007bff
+    Primary color : #0E78BE (bars, icons, media,etc ...)
+    secondary color : #2d3f6e (titles)
+    third color : #5d648e (text, description)
+    
+
+
+
+====================================================================*/
+
+
+
+
+
 
 body {
     padding: 110px 0px 0px 0px;
-    z-index: 0; }
+    z-index: 0;
+}
+
 nav {
     font-family: 'Ubuntu' !important;
     background-color: white;
 }
-.jumbotron {
-    margin: 0px auto;
-    padding: 700px 30px;
-    background-color : rgb(194, 59, 18);
-    color: black; 
-}
+
 .section {
     padding-top: 100px;
 }
+
+.link {
+    color: #0E78BE;
+    text-decoration: none;
+}
+
 .illustration {
     left: 0;
     width: 100%;
 }
+
+.bar {
+    margin: auto;
+    width: 30px;
+    height: 3px;
+    background-color: #0E78BE;
+}
+
 .title {
     font-family: 'Ubuntu';
-    line-height: 2;
-    letter-spacing: 3px;
+    line-height: 1.5;
     color: #2d3f6e;
     margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
+
+.title2 {
+    font-size: 23px;
+    font-family: 'Ubuntu';
+    color: #2d3f6e;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 .desc {
     text-align: justify;
-    font-family: 'Ubuntu' 
+    font-family: 'Ubuntu'
+}
+
+.desc2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #5d648e;
+    line-height: 1.7;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 300;
+    color: #5d648e;
+    line-height: 1.7;
+}
+
+.btn {
+    border-radius: 0px !important;
+}
+
+.btn-general {
+    border: 1px solid #007bff !important;
+    text-transform: uppercase;
+}
+
+.tooltip {
+    margin-bottom: 15px !important;
+}
+
+.tooltip-arrow {
+    background-color: white !important;
+}
+
+.tooltip-inner {
+    border-radius: 15px !important;
+    max-width: 236px !important;
+    height: auto;
+    padding: 10px !important;
+    font-size: 16px;
+    padding: 10px 15px 10px 20px;
+    background: #FFFFFF !important;
+    color: #5d648e !important;
+    box-shadow: 0px 0px 18px #b1b1b1;
 }
 
 @media all and (max-width:480px) {
-    .xs-block { width: 100%; display:block; }
- }   
+    .xs-block {
+        width: 100%;
+        display: block;
+    }
+}
+
 .social-media {
     opacity: 0.8;
 }
+
 .social-media:hover {
     opacity: 1;
 }
-.dropdown-menu > a{
+
+.dropdown-menu>a {
     font-size: 16px;
     line-height: 5px;
     padding: 20px;
 }
-.space-50{
+
+.space-50 {
     height: 50px;
     display: block;
 }
-.space-20{
+
+.space-20 {
     height: 20px;
     display: block;
 }
+
+
+/*================== FontAwesome icons ==================*/
+.fa-certificate {
+    color: #0E78BE !important;
+}
+
 .fa-circle {
     color: #0E78BE !important;
 }
+
 .fa-stack:hover {
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
+.fa-spin {
+    display: none !important;
+}
+
+span {
+    cursor: pointer;
+}
+
+span:hover>.fa-spin {
+    display: inline !important;
+}
+
+
 .logo {
     width: 100%;
 }
+
+/*================== Carousel ==================*/
+
+.carousel {
+    background: #000;
+}
+
+.carousel .carousel-item {
+    height: 600px;
+}
+
+.carousel .carousel-item img {
+    width: 100% !important;
+    min-width: 100% !important;
+    height: auto;
+    min-height: 600px;
+    opacity: 0.8;
+}
+
+@media all and (max-width:767px) {
+    .carousel .carousel-item {
+        height: 300px;
+    }
+
+    .carousel .carousel-item img {
+        width: 100% !important;
+        min-width: 100% !important;
+        height: auto;
+        min-height: 300px;
+        opacity: 0.8;
+    }
+}
+
+#me {
+    cursor: pointer;
+    max-width: 250px;
+    border: 3px dashed #0E78BE;
+    padding: 7px;
+}
+
+#abtme {
+    background-color: #E9ECEF;
+}
+
+/*================== Carousel ==================*/
+.footer {
+    background-color: #282828;
+}
+.footer h5 {
+    margin: 0;
+}
+.ft-title {
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 500;
+}
+.ft-desc {
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    font-weight: 200;
+}
+.map {
+    float: right;
+}
+#logo5 {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* FOR LATER
+#me:hover
+{
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  */
